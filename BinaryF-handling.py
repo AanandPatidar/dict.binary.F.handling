@@ -3,43 +3,55 @@ import pickle
 import random
 d = {}
 def create():
-                ch = "y"
-                count = int(input("\n\tHow many records u wanna enter : "))
-                for i in range(count):
-                    print("\n\t**********  Student Information ************** ")
-                    roll = int(input("\tRollno:\t"))
-                    d[roll]={}
-                    name = input("\tName:\t")
-                    d[roll]["name"]=name
-                    per  = float(input("\tPercentage:\t"))
-                    d[roll]["percentage"]=per
-                    print('\n\t',d)
-                    pickle.dump(d , f)
+                r=random.randint(0,999)
+                print("\t\t\t\t\t\t\t\t\t\t\t........[  ",r," ]........")
+                R=int(input('\n\tEnter the verication code generated above to continue updation :'))
+                if R==r:
+                	ch = "y"
+                	count = int(input("\n\tHow many records u wanna enter : "))
+                	for i in range(count):
+                	    print("\n\t**********  Student Information ************** ")
+	                    roll = int(input("\tRollno:\t"))
+	                    d[roll]={}
+	                    name = input("\tName:\t")
+	                    d[roll]["name"]=name
+	                    per  = float(input("\tPercentage:\t"))
+	                    d[roll]["percentage"]=per
+	                    print('\n\t',d)
+	                    pickle.dump(d , f)
                     
 def add():
-                    print("\n\t**********  Student Information ************** ")
-                    roll = int(input("\tRollno:\t"))
-                    d[roll]={}
-                    name = input("\tName:\t")
-                    d[roll]["name"]=name
-                    per  = float(input("\tPercentage:\t"))
-                    d[roll]["percentage"]=per
-                    print('\n\t',d)
-                    pickle.dump(d , f)
+                    r=random.randint(0,999)
+                    print("\t\t\t\t\t\t\t\t\t\t\t........[  ",r," ]........")
+                    R=int(input('\n\tEnter the verication code generated above to continue updation :'))
+                    if R==r:
+                    			print("\n\t**********  Student Information ************** ")
+                    			roll = int(input("\tRollno:\t"))
+                    			d[roll]={}
+                    			name = input("\tName:\t")
+                    			d[roll]["name"]=name
+                    			per  = float(input("\tPercentage:\t"))
+                    			d[roll]["percentage"]=per
+                    			print('\n\t',d)
+                    			pickle.dump(d , f)
                     
 def search():
-                roll = int(input("\n\tEnter Rollnumber:  "))  # [[111 , 'a' , 33] , [123 , 'b' , 44]   ]
-                flag = 0           
-                for i in d:                    
-                        if i==roll:
-                            print("\trollno: " , i)
-                            print("\tName:   " , d[i]["name"])
-                            print("\tPer:    " , d[i]["percentage"])
-                            print()
-                            flag=1
-                            break
-                if flag==0:
-                    print("\n\tRecord not found:  ")
+                r=random.randint(0,999)
+                print("\t\t\t\t\t\t\t\t\t\t\t........[  ",r," ]........")
+                R=int(input('\n\tEnter the verication code generated above to continue updation :'))
+                if R==r:
+                 roll = int(input("\n\tEnter Rollnumber:  "))  # [[111 , 'a' , 33] , [123 , 'b' , 44]   ]
+                 flag = 0
+                 for i in d:
+                             if i==roll:
+                             	print("\trollno: " , i)
+                             	print("\tName:   " , d[i]["name"])
+                             	print("\tPer:    " , d[i]["percentage"])
+                             	print()
+                             	flag=1
+                             	break
+                             if flag==0:
+                             	print("\n\tRecord not found:  ")
                     
 def update():
                     print(d,'\n')
@@ -94,39 +106,47 @@ def update():
                     if flag ==0:
                         print('Roll not found in the data')
 def delete():
-                roll = int(input("\n\tEnter Rollnumber for deletion the details :  "))  # [[111 , 'a' , 33] , [123 , 'b' , 44]   ]           
-                for i in d:                    
-                        if i==roll:
-                            print("\trollno: " , i)
-                            print("\tName:   " , d[i]["name"])
-                            print("\tPer:    " , d[i]["percentage"])
-                m = 'y'
-                m = input("\n\tPress 'y' to delete or 'n' not to delete:  ")
-                if m=='y':
-                    del d[roll] 
-                    print("\tRecord has been deleted:  ")
-                    print("\t",d)
-                    pickle.dump(d,f)
+                r=random.randint(0,999)
+                print("\t\t\t\t\t\t\t\t\t\t\t........[  ",r," ]........")
+                R=int(input('\n\tEnter the verication code generated above to continue updation :'))
+                if R==r:
+                	roll = int(input("\n\tEnter Rollnumber for deletion the details :  "))  # [[111 , 'a' , 33] , [123 , 'b' , 44]   ]           
+                	for i in d:
+                	            if i==roll:
+                	            	print("\trollno: " , i)
+	                            	print("\tName:   " , d[i]["name"])
+	                            	print("\tPer:    " , d[i]["percentage"])
+	                m = 'y'
+	                m = input("\n\tPress 'y' to delete or 'n' not to delete:  ")
+	                if m=='y':
+	                    del d[roll] 
+	                    print("\tRecord has been deleted:  ")
+	                    print("\t",d)
+	                    pickle.dump(d,f)
 def display():
-                print("\n\tChoose the option:  1. Display all    2.  Display individual:  ")
-                n = int(input("\n\tEnter the choice:  "))
-                if n == 1:
-                    for i in d:
-                            print("\trollno: " , i)
-                            print("\tName:   " , d[i]["name"])
-                            print("\tPer:    " , d[i]["percentage"])
-                            print()
+                r=random.randint(0,999)
+                print("\t\t\t\t\t\t\t\t\t\t\t........[  ",r," ]........")
+                R=int(input('\n\tEnter the verication code generated above to continue updation :'))
+                if R==r:
+                 print("\n\tChoose the option:  1. Display all    2.  Display individual:  ")
+                 n = int(input("\n\tEnter the choice:  "))
+                 if n == 1:
+	                    for i in d:
+	                            print("\trollno: " , i)
+	                            print("\tName:   " , d[i]["name"])
+	                            print("\tPer:    " , d[i]["percentage"])
+	                            print()
                 else:
                     roll = int(input("\n\tEnter Rollnumber:  "))
                     for i in d:
-                        if i==roll:
-                            print("\trollno: " , i)
-                            print("\tName:   " , d[i]["name"])
-                            print("\tPer:    " , d[i]["percentage"])
-                            print()
-                            break
-                        else:
-                            print("\n\tNO SUCH VALUES FOUND FOR THE ROLL NO. ",roll,'\n')
+                            if i==roll:
+                            	print("\trollno: " , i)
+                            	print("\tName:   " , d[i]["name"])
+                            	print("\tPer:    " , d[i]["percentage"])
+	                print()
+	                            break
+                        	else:
+                            	print("\n\tNO SUCH VALUES FOUND FOR THE ROLL NO. ",roll,'\n')
                             break
                         
 with open ("binary.dat","wb")as f:
